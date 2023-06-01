@@ -16,6 +16,8 @@ export class AuthController {
   }
   @Post('login')
   login() {
-    return;
+    try {
+      return this.authService.login();
+    } catch (error) {}
   }
 }

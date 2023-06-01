@@ -30,6 +30,6 @@ export class AuthService {
     return newUser;
   }
   login() {
-    return;
+    return 'loggedin';
   }
 }
