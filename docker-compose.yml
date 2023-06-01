@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:15.0
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123123
+      POSTGRES_DB: tut-01
+    networks:
+      - tut01-network
+networks:
+  tut01-network:
+# tut-01-auth-db-1
+# docker compose up -d
+# docker compose up -d db -d
+# docker exec -it 'name container' bash
+# postgres:
+# get into db: psql -U "POSTGRES_USER" -W "POSTGRES_DB"
+# get list db: \dt
